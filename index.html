@@ -53,7 +53,7 @@
                         <button id="bt1" class="btn btn-primary btn-lg"></button>
                     </div>
                     <div class="col-2 mt-5">
-                        <button id="bt2" class="btn btn-danger btn-lg">+</button>
+                        <button id="bt2" class="btn btn-danger btn-lg">×</button>
                     </div>
                     <div class="col-2 mt-5">
                         <button id="bt3" class="btn btn-info btn-lg">*</button>
@@ -123,14 +123,14 @@
         let aud10 = document.getElementById('aud10');
         let bt1 = document.getElementById('bt1');
         let bt3 = document.getElementById('bt3');
-        let c1 = Math.random() * 99;
+        let c1 = Math.random() * 10;
         
         let c11 = parseInt(c1);
         if (c11 == 0){
             location.reload()
         }
        
-        let c3 = Math.random() * 99;
+        let c3 = Math.random() * 7;
         let c33 = parseInt(c3);
         if (c33 == 0){
             location.reload()
@@ -173,7 +173,7 @@
             }
             let inp = document.getElementById('inp1');
 
-            let ans = c11 + c33;
+            let ans = c11 * c33;
             let aw = inp.value;
             console.log(aw)
             aw = Number(aw);
